@@ -1,0 +1,38 @@
+[
+  {
+    "name": "HTML",
+    "image": "/logos/HTML5.svg"
+  },
+  {
+    "name": "CSS",
+    "image": "/logos/CSS3.svg"
+  },
+  {
+    "name": "Java Script",
+    "image": "/logos/JavaScript.png"
+  },
+  {
+    "name": "React",
+    "image": "/logos/React.svg"
+  },
+  {
+    "name": "Next",
+    "image": "/logos/Next.svg"
+  },
+  {
+    "name": "Node",
+    "image": "/logos/Node.svg"
+  },
+  {
+    "name": "Express",
+    "image": "/logos/Expressjsblack.webp"
+  },
+  {
+    "name": "MySQL",
+    "image": "/logos/MySQL.svg"
+  },
+  {
+    "name": "Git",
+    "image": "/logos/Git.svg"
+  }
+]

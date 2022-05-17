@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Home",
+    "href": "/"
+  },
+  {
+    "name": "Résumé",
+    "href": "/resume"
+  },
+  {
+    "name": "Contact",
+    "href": "/contact"
+  }
+]

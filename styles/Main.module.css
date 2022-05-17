@@ -1,0 +1,136 @@
+@value vars: './vars.module.css';
+@value canvas_color, primary_color, secondary_color, font_color, general-font-family from vars;
+
+.canvas {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: canvas_color;
+  font-family: general-font-family;
+}
+
+.layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.side_bar {
+  position: relative;
+  height: 100%;
+  width: max(10%, 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: primary_color;
+  margin: 0;
+}
+
+.child {
+  position: relative;
+  height: 100%;
+  width: calc(100% - max(10%, 8rem));
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: secondary_color;
+  color: font_color;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.intro {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro_image {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 15%;
+  box-shadow: 0 0 0.3rem black;
+}
+
+.intro_text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.grow {
+  animation: grow 2s;
+}
+@keyframes grow {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.slide_to_left {
+  animation: slide_to_left 2s;
+}
+@keyframes slide_to_left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .canvas {
+    width: 100vw;
+  }
+  .layout {
+    flex-direction: column;
+  }
+  .side_bar {
+    width: 100%;
+    height: 5%;
+    flex-direction: row;
+    padding: 0;
+  }
+  .child {
+    height: 95%;
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro_image {
+    max-width: 100%;
+  }
+}

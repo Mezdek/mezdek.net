@@ -1,0 +1,21 @@
+{
+  "my_links": [
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Mezdek",
+      "icon": "/logos/github.webp",
+      "target": "_blank"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/mezdekosman/",
+      "icon": "/logos/LinkedIn_Logo.svg",
+      "target": "_blank"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:mezdekosman@hotmail.com",
+      "target": "_blank"
+    }
+  ]
+}
