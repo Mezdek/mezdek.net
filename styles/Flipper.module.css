@@ -1,8 +1,8 @@
 @value font_color from './vars.module.css';
 
 .container {
-  width: 16vmin;
-  height: 16vmin;
+  width: 14vmin;
+  height: 14vmin;
   margin: 4vmin;
   padding: 0;
 }
@@ -54,9 +54,27 @@
 .object:hover {
   transform: rotateX(90deg);
 }
-
+.main{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid; */
+}
 .skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  /* border: solid; */
+
+}
+.title {
+  display: flex;
+  /* width: 50%;
+  height: 50%; */
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  /* border: solid; */
 }

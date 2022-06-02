@@ -7,7 +7,7 @@ export default function Section({ id, animation, children }) {
   const isVisible = state.includes(`${id}`);
   return (
     <div className={style.section} id={id}>
-      <div className={isVisible ? style[animation] : undefined}>{children}</div>
+      <div className={`${style.section_in} ${isVisible ? style[animation] : undefined}`}>{children}</div>
     </div>
   );
 }

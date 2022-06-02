@@ -1,6 +1,8 @@
-@value canvas_color: #fff;
-@value primary_color: #031E3A;
-@value secondary_color: #fdfded;
-@value font_color: #031E3A;
+@value canvas_color_hex: 235, 237, 190;
+@value primary_color_hex:  245, 211, 51;
+@value secondary_color_hex:  235, 237, 190;
+@value canvas_color: rgb(canvas_color_hex);
+@value primary_color: rgb(primary_color_hex);
+@value secondary_color: rgb(00, 00, 00);
+@value font_color: #010613;
 @value general-font-family: sans-serif;
-

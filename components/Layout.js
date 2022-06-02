@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { actionCreators } from "../state";
 import { useDispatch } from "react-redux";
 
-import SideBar from "./SideBar";
+// import SideBar from "./SideBar";
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
@@ -32,7 +32,7 @@ export default function Layout({ children }) {
 
   return (
     <div className={style.layout}>
-      <SideBar />
+      {/* <SideBar /> */}
       <div className={style.child} onScroll={(e) => handleScroll(e)}>
         {childrenWithID}
       </div>

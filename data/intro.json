@@ -1,6 +1,7 @@
 {
   "name": "Mezdek",
-  "image":"https://avatars.githubusercontent.com/u/79620385?v=4",
-  "main": "I am in love with human cultures and primarily their languages. I want to learn everything I can about humans, analyse their ways of living and understand them and try to find solutions to their problems, and I find programming is one magical way to do most of that.",
-  "secondary": "I come from Mesopotamia, the region where the first writing codes have seen light, and I have been living in Germany since 2016 after fleeing a bloody war in Syria."
+  "city": "Berlin",
+  "image": "/man.jpg",
+  "hobbies": ["learning", "languages", "history", "technology"],
+  "introduction": "Hi, my name is Mezdek and I am a web developer based in Berlin. I love learning and I am curious about many things, like language, history and technology. During the pandemic I took the chance to improve my old hobby in programming. And now I can't wait to dive deeper in this profession."
 }

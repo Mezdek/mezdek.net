@@ -1,5 +1,5 @@
 @value vars: './vars.module.css';
-@value canvas_color, primary_color, secondary_color, font_color, general-font-family from vars;
+@value canvas_color, primary_color_hex, secondary_color_hex, primary_color, secondary_color, font_color, general-font-family from vars;
 
 .canvas {
   position: relative;
@@ -16,25 +16,27 @@
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   overflow: hidden;
 }
 
 .side_bar {
   position: relative;
   height: 100%;
-  width: max(10%, 8rem);
+  width: max(9%, 7rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: primary_color;
+  background-color: rgba(primary_color_hex, 0.1);
+  border-right: solid rgba(primary_color_hex, 1) 1rem;
   margin: 0;
 }
 
 .child {
   position: relative;
   height: 100%;
-  width: calc(100% - max(10%, 8rem));
+  /* width: calc(100% - max(9%, 7rem)); */
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -46,44 +48,54 @@
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-color: secondary_color;
+  background: rgba(primary_color_hex, 0.1);
   color: font_color;
-  padding: 2rem;
   margin-bottom: 2rem;
   scroll-snap-stop: always;
   scroll-snap-align: center;
   overflow: hidden;
 }
 
+.section_in{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  /* padding: 2rem; */
+}
+
+/*intro*/
+
 .intro {
   position: relative;
-  max-width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border: solid; */
 }
 
-.intro_image {
-  max-width: 50%;
-  max-height: 50%;
-  border-radius: 15%;
-  box-shadow: 0 0 0.3rem black;
-}
-
-.intro_text {
+.intro_text_main {
   position: relative;
-  display: flex;
-  align-items: center;
+  width: 50%;
   padding: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   text-align: justify;
 }
-
+.intro_text_sub {
+  position: relative;
+  width: 70%;
+  padding: 2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
 .grow {
   animation: grow 2s;
 }
@@ -91,6 +103,21 @@
   0% {
     transform: scale(0.3);
     opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.glow {
+  animation: glow 2s;
+  transition: 1s;
+}
+@keyframes glow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
   }
   100% {
     transform: scale(1);
@@ -110,6 +137,36 @@
   }
 }
 
+.CodingXP_Container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CodingXP_Intro{
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.CodingXP_Projects{
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+  border: solid;
+}
 @media screen and (orientation: portrait) {
   .canvas {
     width: 100vw;
@@ -134,3 +191,4 @@
     max-width: 100%;
   }
 }
+

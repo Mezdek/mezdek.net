@@ -38,7 +38,7 @@
   margin-top: 2rem;
 }
 .contact_button:hover {
-  filter: drop-shadow(0 1rem 0.2rem primary_color);
+  filter: drop-shadow(0 1.5rem 0.2rem primary_color);
 }
 .contact_button_image {
   max-width: 100%;

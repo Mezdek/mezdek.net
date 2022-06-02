@@ -5,6 +5,7 @@ import Head from "next/head";
 import style from "../styles/Main.module.css";
 import Layout from "../components/Layout";
 import Resume from "../components/Resume";
+import Section from "../components/Section";
 
 export default function Home() {
   return (
@@ -16,7 +17,12 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Layout>
-          <Resume />
+          <Section>
+            <Resume />
+          </Section>
+          <Section>
+            <Resume />
+          </Section>
         </Layout>
       </div>
     </Provider>
