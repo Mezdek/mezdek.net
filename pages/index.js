@@ -31,9 +31,6 @@ export default function Home() {
           <Section>
             <Background />
           </Section>
-          <Section animation={"slide_to_left"}>
-            <ContactCard />
-          </Section>
         </Layout>
       </div>
     </Provider>

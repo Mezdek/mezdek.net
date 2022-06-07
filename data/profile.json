@@ -1,0 +1,8 @@
+{
+  "name": "Mezdek",
+  "job": "web developer",
+  "old-city": "",
+  "current-city": "Berlin",
+  "image": "/man.jpg",
+  "hobbies": ["learning", "languages", "history", "technology"]
+}

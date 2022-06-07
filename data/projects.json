@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Music Jam",
+    "image": "https://i.ibb.co/4Nv1dqj/musicjam.gif",
+    "description": "A school project for participation in a hackathon. It is for musicians to meet and jam together.",
+    "link": "https://github.com/Mezdek/jam-project-front"
+  },
+  {
+    "name": "Planet Music",
+    "image": "https://i.ibb.co/pWXKcK2/planetmusic.gif",
+    "description": "A project to learn how to consume a Web API with React.",
+    "link": "https://github.com/Mezdek/planetMusic"
+  },
+  {
+    "name": "Paradox",
+    "image": "https://i.ibb.co/RhQ4hCm/paradox.gif",
+    "description": "The last project in the boot camp, a full stack web application.",
+    "link": "https://github.com/Mezdek/paradox"
+  },
+  {
+    "name": "Music Jam",
+    "image": "https://i.ibb.co/4Nv1dqj/musicjam.gif",
+    "description": "A school project for participation in a hackathon. It is for musicians to meet and jam together.",
+    "link": "https://github.com/Mezdek/jam-project-front"
+  },
+  {
+    "name": "Paradox",
+    "image": "https://i.ibb.co/RhQ4hCm/paradox.gif",
+    "description": "The last project in the boot camp, a full stack web application.",
+    "link": "https://github.com/Mezdek/paradox"
+  },
+  {
+    "name": "Planet Music",
+    "image": "https://i.ibb.co/pWXKcK2/planetmusic.gif",
+    "description": "A project to learn how to consume a Web API with React.",
+    "link": "https://github.com/Mezdek/planetMusic"
+  },
+  {
+    "name": "Paradox",
+    "image": "https://i.ibb.co/RhQ4hCm/paradox.gif",
+    "description": "The last project in the boot camp, a full stack web application.",
+    "link": "https://github.com/Mezdek/paradox"
+  }
+]

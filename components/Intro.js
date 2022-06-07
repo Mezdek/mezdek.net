@@ -1,22 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "../styles/Main.module.css";
-import intro from "../data/intro.json";
+import profile from "../data/profile.json";
 import { hobbies } from "../modules";
+import ContactCard from "./ContactCard";
 
 export default function Intro() {
   return (
-    <div className={style.intro}>
-      <p className={style.intro_text_main}>
-        Hi, my name is <span className={style.intro_name}>{intro.name}</span>{" "}
-        and I am a web developer based in{" "}
-        <span className={style.intro_city}>{intro.city}</span>.{" "}
-        {hobbies(intro.hobbies)}.
-      </p>
-      <p className={style.intro_text_sub}>
-        During the pandemic I took the chance to improve my old hobby in
-        programming. And now I {"can't"} wait to dive deeper in this profession.
-      </p>
+    <div className={style.intro_main}>
+      <ContactCard />
+        <span className={style.intro_name_line}>
+          Hi, I am <i className={style.intro_name}>{profile.name}</i>
+        </span>
+        <span className={style.intro_location_line}>
+          A <i className={style.intro_location_old}>{profile["old-city"]}</i>{" "}
+          <i className={style.intro_location}>{profile["current-city"]}</i>{" "}
+          based <i className={style.intro_job}>{profile.job}</i>
+        </span>
+        {/* <span className={style.intro_hobbies_line}>
+          {hobbies(profile.hobbies)}
+        </span> */}
     </div>
   );
 }

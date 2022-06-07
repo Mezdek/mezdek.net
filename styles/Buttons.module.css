@@ -1,16 +1,16 @@
-@value primary_color, secondary_color, font_color from './vars.module.css';
+@value primary_color, primary_color_hex, secondary_color, font_color from './vars.module.css';
 .button {
   position: relative;
   height: 2rem;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: secondary_color;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem auto;
+  padding: 0.5rem;
+  /* margin: 0.5rem auto; */
   cursor: pointer;
   transition: 350ms;
 }
@@ -30,15 +30,15 @@
 }
 
 .contact_button {
-  width: min(12rem, 50vw);
-  height: 4rem;
+  /* width: min(12rem, 50vw);;
+  height: 4rem; */
   color: font_color;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .contact_button:hover {
-  filter: drop-shadow(0 1.5rem 0.2rem primary_color);
+  /* filter: drop-shadow(0 1.5rem 0.2rem rgba(0,0,0, 0.5)); */
 }
 .contact_button_image {
   max-width: 100%;
