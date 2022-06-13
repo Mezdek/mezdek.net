@@ -14,10 +14,10 @@
 
 .resume {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: 1rem;
   text-align: justify;
-  line-height: 1.6;
+  line-height: 120%;
 }
 
 .hint {
@@ -62,9 +62,9 @@
   color: primary_color;
   box-shadow: 0px 0px 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
-  line-height: 1.3;
+  /* line-height: 1.3; */
   transition: 850ms;
-  padding: 5%;
+  padding: 8%;
   z-index: 1;
 }
 
@@ -76,6 +76,66 @@
   text-align: justify;
 }
 
+.key:hover + .ticket {
+  transform: translate(-50%, 40%) rotate(0deg);
+}
+
+/********** Responsive **********/
+
+/** Mobile Phones **/
+
+@media only screen and (orientation: portrait) {
+  .main {
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .resume {
+    width: 80%;
+  } */
+  .hint {
+    position: relative;
+    top: -50%;
+    align-self: unset;
+  }
+
+  .ticket {
+    height: 60vh;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translate(-50%, 20%) scale(0);
+    overflow: auto;
+  }
+  .key:hover + .ticket {
+    opacity: 1;
+    transform: translate(-50%, 20%) scale(1);
+  }
+}
+
+/** Tablets **/
+
+@media only screen and (max-height: 540px) and (orientation: landscape) {
+  .main {
+    height: 90%;
+  }
+
+  .hint {
+    font-size: 1.3rem;
+  }
+
+  .ticket {
+    height: 60vh;
+    overflow: auto;
+  }
+
+  .key:hover + .ticket {
+    transform: translate(-50%, 20%) rotate(0deg);
+  }
+}
+
+/********** Animations **********/
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -83,10 +143,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.key:hover + .ticket {
-  transform: translate(-50%, 40%) rotate(0deg);
 }
 
 @keyframes bounce {
@@ -98,31 +154,5 @@
   }
   100% {
     transform: translate(0, 0);
-  }
-}
-@media screen and (orientation: portrait) {
-  .main {
-    height: 90%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .resume {
-    width: 80%;
-  }
-  .hint {
-    position: relative;
-    top: -50%;
-    align-self: unset;
-    width: 60%;
-  }
-
-  .ticket{
-    height: 28rem;
-    padding: 8%;
-    transform: translate(200%, 20%);
-  }
-  .key:hover + .ticket {
-    transform: translate(-50%, 20%) rotate(0deg);
   }
 }
