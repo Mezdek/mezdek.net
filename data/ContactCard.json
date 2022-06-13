@@ -1,18 +1,18 @@
 [
   {
-    "name": "GitHub",
+    "title": "GitHub",
     "href": "https://github.com/Mezdek",
     "icon": "/logos/github.png",
     "target": "_blank"
   },
   {
-    "name": "LinkedIn",
+    "title": "LinkedIn",
     "href": "https://www.linkedin.com/in/mezdekosman/",
     "icon": "/logos/linkedin.png",
     "target": "_blank"
   },
   {
-    "name": "Email",
+    "title": "Email",
     "href": "mailto:mezdekosman@hotmail.com",
     "icon": "/logos/email.png",
     "target": "_blank"

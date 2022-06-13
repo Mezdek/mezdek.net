@@ -1,0 +1,55 @@
+@value primary_color, secondary_color, font_color from './vars.module.css';
+.main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin: 1rem;
+}
+
+.icon {
+  position: relative;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: font_color;
+  text-transform: capitalize;
+  margin: 0.5rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.icon:hover {
+  transform: scale(1.3);
+  color: secondary_color;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  color: inherit;
+  text-decoration: underline dotted 10%;
+  cursor: alias;
+  transition: 400ms;
+}
+
+.text:hover {
+  color: secondary_color;
+}
+@media screen and (orientation: portrait) {
+  .main {
+    left: 0;
+    right: unset;
+    margin: 0;
+  }
+  .icon {
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,223 @@
+@value vars: '../../styles/vars.module.css';
+@value canvas_color, primary_color, primary_color_rgb, secondary_color, secondary_color_rgb, font_color, font_color_rgb, general-margin, general-font-family from vars;
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: default;
+}
+
+.intro {
+  position: relative;
+  width: calc(100% - (general-margin * 2));
+  line-height: 1.6;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.projects_container {
+  position: relative;
+  width: calc(100% - (general-margin * 2));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects_header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.projects_slider {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.projects_slider::-webkit-scrollbar {
+  display: none;
+}
+.projects_slider_scroller {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.left {
+  left: -2rem;
+  animation: bounce_left 1s infinite;
+}
+
+.right {
+  right: -2rem;
+  animation: bounce_right 1s infinite;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  width: 40%;
+  height: calc(100% - 1rem);
+  flex-direction: column;
+  margin: 0.5rem;
+  background-color: rgba(secondary_color_rgb, 0.07);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.project_title {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: auto 0;
+  color: secondary_color;
+  font-size: 1.1rem;
+  cursor: alias;
+  height: 10%;
+}
+
+.project_image_container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_image {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0;
+  text-align: justify;
+  height: 45%;
+}
+
+/********** Responsive **********/
+@media only screen and (orientation: portrait) {
+  .main {
+    height: 90%;
+  }
+  .intro {
+    width: 80%;
+  }
+  .projects_container {
+    width: 80%;
+  }
+
+  .project {
+    width: calc(100% - 4rem);
+    height: calc(100% - 1rem);
+    scroll-snap-stop: normal;
+    scroll-snap-align: center;
+  }
+  .projects_header {
+    margin: 0;
+  }
+  .projects_slider {
+    scroll-snap-type: x mandatory;
+  }
+  .projects_slider_scroller {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) and (max-height: 360px) {
+  .main {
+    height: 100%;
+    align-items: center;
+    justify-content: stretch;
+  }
+  .intro {
+    width: 80%;
+  }
+  .projects_container {
+    width: 80%;
+    height: 100%;
+  }
+  .projects_header {
+    margin: 0;
+  }
+  .projects_slider_scroller {
+    display: none;
+  }
+  .projects_slider {
+    scroll-snap-type: x mandatory;
+    height: 100%;
+  }
+  .project {
+    flex-direction: row;
+    width: calc(100% - 4rem);
+    height: calc(100% - 1rem);
+    scroll-snap-stop: normal;
+    scroll-snap-align: center;
+  }
+  .project_title {
+    height: 15%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .project_image_container {
+    align-self: flex-end;
+    height: 85%;
+    width: 50%;
+  }
+  .project_image {
+    max-width: 100%;
+    max-height: 100%;
+    height: unset;
+  }
+  .project_description {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+  }
+}
+/********** Animations **********/
+@keyframes bounce_left {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-6px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bounce_right {
+  0% {
+    transform: translate(0, -50%);
+  }
+  50% {
+    transform: translate(6px, -50%);
+  }
+  100% {
+    transform: translate(0, -50%);
+  }
+}

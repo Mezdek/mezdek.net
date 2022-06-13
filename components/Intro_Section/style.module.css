@@ -1,0 +1,48 @@
+@value vars: '../../styles/vars.module.css';
+@value canvas_color, primary_color, secondary_color, font_color, general-font-family from vars;
+
+.intro_main {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: Lalezar;
+  color: font_color;
+}
+
+.intro_name {
+  font-style: normal;
+  color: secondary_color;
+}
+.intro_job {
+  font-style: normal;
+}
+.intro_location_old {
+  font-style: normal;
+  text-decoration: line-through;
+}
+.intro_location {
+  font-style: normal;
+}
+.intro_name_line {
+  display: block;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.intro_location_line {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+@media screen and (orientation: portrait) {
+  .intro_main {
+    height: 80%;
+    align-items: center;
+  }
+}

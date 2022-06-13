@@ -1,6 +1,15 @@
-import React, { useEffect } from "react";
-import style from "../styles/Main.module.css";
+import React from "react";
+import style from "./style.module.css";
 import { useSelector } from "react-redux";
+
+const handleClick = ({ e, index }) => {
+  const children = e.target.parentElement.parentElement.children;
+  children[children.length - 1].scrollTo({
+    top: 700 * index,
+    left: 0,
+    behavior: "smooth",
+  });
+};
 
 export default function Navi({ count }) {
   const state = useSelector((state) => state.visible);
@@ -13,13 +22,7 @@ export default function Navi({ count }) {
       {countArr.map((item, index) => (
         <div
           key={index}
-          onClick={(e) => {
-            e.target.parentElement.parentElement.children[1].scrollTo({
-              top: 700 * index,
-              left: 0,
-              behavior: "smooth",
-            });
-          }}
+          onClick={(e) => handleClick({ e, index })}
           className={`${style.navi_selector} ${
             state[0] == `${item}` || (state.length == 0 && index == 0)
               ? style.navi_selected

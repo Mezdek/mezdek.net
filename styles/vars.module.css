@@ -1,22 +1,11 @@
 @value canvas_color_rgb: 255, 255, 255;
-@value primary_color_rgb:  61, 143, 132;
-@value secondary_color_rgb: 143, 61, 72;
-@value font_color_rgb: 198, 210, 137;
+@value primary_color_rgb:  240, 207, 101;
+@value secondary_color_rgb: 189, 79, 108;
+@value font_color_rgb: 95, 145, 171;
 @value canvas_color: rgb(canvas_color_rgb);
 @value primary_color: rgb(primary_color_rgb);
 @value secondary_color: rgb(secondary_color_rgb);
 @value font_color: rgb(font_color_rgb);
-@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Lalezar&display=swap");
-@value general-font-family: dosis, serif, sans-serif;
-
-/* 
-Arial (sans-serif)
-Verdana (sans-serif)
-Helvetica (sans-serif)
-Tahoma (sans-serif)
-Trebuchet MS (sans-serif)
-Times New Roman (serif)
-Georgia (serif)
-Garamond (serif)
-Courier New (monospace)
-Brush Script MT (cursive) */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Lalezar&family=Fresca&display=swap");
+@value general-font-family: Fresca, sans-serif;
+@value general-margin: 15%;

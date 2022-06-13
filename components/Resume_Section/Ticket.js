@@ -1,10 +1,9 @@
 import React from "react";
-import style from "../styles/Resume.module.css";
+import style from "./style.module.css";
 
-export function Ticket({ data, id }) {
+function JobDescription({ data }) {
   return (
-    <div className={style.ticket} id={id}>
-      {/* <p className={style.ticket_title}>{data.title}</p> */}
+    <div className={style.ticket}>
       <p className={style.ticket_header}>
         {data.start_date} - {data.end_date}
         <br />
@@ -21,11 +20,15 @@ export function Ticket({ data, id }) {
           ))}
         </ul>
       )}
-      {data.remarks && (
-        <p>
-          <i>{data.remarks}</i>
-        </p>
-      )}
     </div>
+  );
+}
+
+export default function Ticket({ data }) {
+  return (
+    <i className={style.entry}>
+      <i className={style.key}>{data.title}</i>
+      <JobDescription data={data} />
+    </i>
   );
 }

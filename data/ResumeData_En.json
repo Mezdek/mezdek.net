@@ -1,72 +1,55 @@
 [
   {
-    "start_date": "2021",
-    "end_date": "2022",
-    "title": "Full-Stack Web Development Bootcamp",
-    "description": [
-      "React.js, Redux, Next.js for the front-end",
-      "Node.js, Express.js for the back-end",
-      "MySQL, MongoDB for the database",
-      "Git, GitHub, Heroku for version control"
-    ],
-    "location": "Berlin",
-    "organisation": "Wild Code School",
-    "remarks": ""
-  },
-  {
+    "title": "Barkeeper/Waiter",
+    "organisation": "Various Bars",
+    "location": "Ludwigsburg and Berlin, Germany",
     "start_date": "2018",
     "end_date": "2020",
-    "title": "Barkeeping",
     "description": [
-      "Mixing and serving drinks",
-      "Waiting on guests",
-      "Collecting bill payments and maintaining checkout operations",
-      "Maintaining a sanitary environment"
-    ],
-    "location": "",
-    "organisation": "Various Bars",
-    "remarks": ""
+      "Preparation and serving of beverages of more than 30 different recipes",
+      "Directing shifts serving in events of few hundred guests",
+      "Maintaining flawless accounting at the end of the day"
+    ]
   },
   {
+    "title": "Receptionist",
+    "organisation": "Best House Hotel",
+    "location": "Istanbul, Turkey",
     "start_date": "2015",
     "end_date": "2016",
-    "title": "Receptionist",
     "description": [
-      "Checking guests in and out",
-      "Answering phones",
-      "Managing bookings and reservations"
-    ],
-    "location": "Istanbul",
-    "organisation": "Best House Hotel",
-    "remarks": ""
+      "Welcoming guests and providing them with the most suitable room",
+      "Assessing the credentials of the guests and verifying a legal and smooth check-in",
+      "Informing guests about the hotel's policies and procedures",
+      "Answering phones and managing bookings and reservations",
+      "Working night shifts and on the weekends"
+    ]
   },
   {
+    "title": "Translator",
+    "organisation": "Various Organizations",
+    "location": "Syria, Turkey, Greece and Germany",
     "start_date": "2012",
     "end_date": "2020",
-    "title": "Translator",
     "description": [
       "Interpretation to and from Arabic, English, German, Kurdish, and Turkish",
-      "Translations and preparation of informational materials",
+      "Informing of cultural misunderstandings and suggesting alternative phrases",
+      "Translations and preparation of brochures, booklets and other materials",
       "Engagement in a variety of fields including: medical, humanitarian, organizational, and logistical"
-    ],
-    "location": "",
-    "organisation": "Various Organizations",
-    "remarks": ""
+    ]
   },
   {
+    "title": "Liaison Officer",
+    "organisation": "Doctors Without Borders (MSF)",
+    "location": "Syria",
     "start_date": "2012",
     "end_date": "2013",
-    "title": "Liaison Officer",
     "description": [
-      "Regular visits to IDP camps to examine their health-related situation and determine their needs",
-      "Documentation and reporting of circumstances",
-      "Organising mobile clinics in coordination with the head of the medical department",
-      "Reporting logistic needs to the logistic department manager",
-      "Oral and written translations and preparation of informational materials in Arabic, English and Turkish",
-      "Organization and implementation of patient transport"
-    ],
-    "location": "Syria",
-    "organisation": "Doctors Without Borders (MSF)",
-    "remarks": ""
+      "Regularly visiting hundreds of refugees in dozens of scattered camps and temporary residences",
+      "Assessing and Documenting the living, housing and sanitation situation of the refugees through observation, interviews, and surveys",
+      "Reporting to the medical department and co-organizing mobile clinics that are relevant to the needs of the refugees",
+      "Reporting to the logistic department and co-organizing necessary logistics operations as construction of latrines or distribution of water canisters",
+      "Organization of the transportation process of critical patients to the turkish medical teams on the border"
+    ]
   }
 ]

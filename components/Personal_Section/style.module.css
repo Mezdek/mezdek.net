@@ -1,0 +1,84 @@
+@value vars: '../../styles/vars.module.css';
+@value canvas_color, primary_color, secondary_color, general-margin, font_color from vars;
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.container {
+  position: relative;
+  width: calc(100% - (general-margin * 2));
+  line-height: 1.6;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.beforeRev {
+  position: relative;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+  text-indent: 2rem;
+}
+.afterRev {
+  position: relative;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+.city {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+.basic {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+.boards {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+.langSkill {
+  position: relative;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+.hobbies {
+  position: relative;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
+@media screen and (orientation: portrait) {
+  .main {
+    height: 90%;
+  }
+}
