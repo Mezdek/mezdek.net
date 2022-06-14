@@ -56,16 +56,8 @@
 }
 
 /********** Responsive **********/
-
-/* @media screen and (orientation: portrait) {
-  .canvas {
-    width: 100vw;
-  }
-  .layout {
-  }
+@media only screen and (max-height: 540px) and (orientation: landscape) {
   .child {
- 
+    scroll-snap-type: unset;
   }
-} */
-
-/*************** name ***************/
+}
