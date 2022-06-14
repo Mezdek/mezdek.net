@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   cursor: default;
+  margin: auto 0;
 }
 
 .intro {

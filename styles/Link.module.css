@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-around;
   z-index: 1;
+  padding: 0.4rem;
 }
 
 .icon {
