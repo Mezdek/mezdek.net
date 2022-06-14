@@ -1,0 +1,47 @@
+@value primary_color, secondary_color, font_color from './vars.module.css';
+.main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20%;
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.icon {
+  position: relative;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: font_color;
+  text-transform: capitalize;
+  margin: 8%;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.icon:hover {
+  transform: scale(1.3);
+  color: secondary_color;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  color: inherit;
+  text-decoration: underline dotted 10%;
+  cursor: alias;
+  transition: 400ms;
+}
+
+.text:hover {
+  color: secondary_color;
+}

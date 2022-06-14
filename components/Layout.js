@@ -5,7 +5,8 @@ import { bindActionCreators } from "redux";
 import { actionCreators } from "../state";
 import { useDispatch } from "react-redux";
 
-import SideBar from "./SideBar";
+import Navi from "./Navi";
+import ContactCard from "./ContactCard";
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
@@ -21,18 +22,18 @@ export default function Layout({ children }) {
     }
   };
 
-  const childrenWithID = Children.map(children, (child, key) => {
+  const childrenWithID = Children.map(children, (child, index) => {
     if (isValidElement(child)) {
-      return cloneElement(child, { id: ++key });
+      return cloneElement(child, { id: ++index });
     } else {
       return child;
     }
   });
 
-
   return (
     <div className={style.layout}>
-      <SideBar />
+      <Navi count={childrenWithID.length} />
+      <ContactCard />
       <div className={style.child} onScroll={(e) => handleScroll(e)}>
         {childrenWithID}
       </div>

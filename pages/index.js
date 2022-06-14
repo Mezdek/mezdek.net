@@ -1,14 +1,16 @@
 import { Provider } from "react-redux";
 import { store } from "../state/store";
 
-import Head from "next/head";
-import Section from "../components/Section";
 import style from "../styles/Main.module.css";
-import Skills from "../components/Skills";
-import Intro from "../components/Intro";
-import Layout from "../components/Layout";
 
-import intro from "../data/intro.json";
+import Head from "next/head";
+
+import Layout from "../components/Layout";
+import Section from "../components/Section";
+import Intro from "../components/Intro_Section";
+import CodingXP from "../components/CodingXP_Section";
+import Resume from "../components/Resume_Section";
+import Personal from "../components/Personal_Section";
 
 export default function Home() {
   return (
@@ -23,11 +25,14 @@ export default function Home() {
           <Section>
             <Intro />
           </Section>
-          <Section animation="grow">
-            <p className={style.text}>{intro.secondary}</p>
+          <Section>
+            <CodingXP />
           </Section>
-          <Section animation={"slide_to_left"}>
-            <Skills />
+          <Section>
+            <Resume />
+          </Section>
+          <Section>
+            <Personal />
           </Section>
         </Layout>
       </div>

@@ -1,13 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import style from "../styles/ContactCard.module.css";
-import { ContactButton } from "./Button";
+import style from "../styles/Link.module.css";
 import ContactData from "../data/ContactCard.json";
+
+import Link from "./Link";
 
 export default function ContactCard() {
   return (
     <div className={style.main}>
-      {ContactData["my_links"].map((contact) => (
-        <ContactButton key={contact.id} link={contact} />
+      {ContactData.map((contact, index) => (
+        <Link key={index} {...contact} />
       ))}
     </div>
   );

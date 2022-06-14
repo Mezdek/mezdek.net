@@ -1,160 +1,55 @@
 [
   {
-    "section": "Work Experience",
-    "details": [
-      {
-        "start_date": "07.2020",
-        "end_date": "03.2018",
-        "activity_title": "Waiter/Bartender",
-        "activity_description": [
-          "Mixing and serving drinks",
-          "Waiting on guests",
-          "Collecting bill payments and maintaining checkout operations",
-          "Maintaining a sanitary environment"
-        ],
-        "activity_location": "Berlin, Ludwigsburg",
-        "activity_organisation": "Different Bars",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "12.2015",
-        "end_date": "03.2016",
-        "activity_title": "Receptionist",
-        "activity_description": [
-          "Checking guests in and out",
-          "Answering phones",
-          "Managing bookings and reservations"
-        ],
-        "activity_location": "Istanbul, Turkey",
-        "activity_organisation": "Best House Hotel",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "07.2015",
-        "end_date": "08.2015",
-        "activity_title": "Crisis Aid",
-        "activity_description": [
-          "Visiting IDP camps",
-          "Assessment of security circumstances",
-          "Collecting statistics of the people living there and their living conditions",
-          "Organization and distribution of aid packages"
-        ],
-        "activity_location": "Salqin, Syria",
-        "activity_organisation": "Ärzte ohne Grenzen (MSF)",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "09.2012",
-        "end_date": "06.2013",
-        "activity_title": "Liaison Officer",
-        "activity_description": [
-          "Regular visits to IDP camps to examine their health-related circumstances and determine their needs",
-          "Documentation and reporting of circumstances",
-          "Organising mobile clinics in coordination with the head of the medical department",
-          "Reporting logistic needs to the logistic department manager",
-          "Oral and written translations and preparation of informational materials in Arabic, English and Turkish",
-          "Organization and implementation of patient transport"
-        ],
-        "activity_location": "Barnass, Syria",
-        "activity_organisation": "Doctors Without Borders (MSF)",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "12.2011",
-        "end_date": "05.2012",
-        "activity_title": "Waiter/Bartender",
-        "activity_description": [
-          "Mixing and serving drinks",
-          "Waiting on guests",
-          "Collecting bill payments and maintaining checkout operations",
-          "Maintaining a sanitary environment"
-        ],
-        "activity_location": "Mersin, Turkey",
-        "activity_organisation": "Capito Café Bar",
-        "activity_organisation_url": "",
-        "remarks": ""
-      }
+    "title": "Barkeeper/Waiter",
+    "organisation": "Various Bars",
+    "location": "Ludwigsburg and Berlin, Germany",
+    "start_date": "2018",
+    "end_date": "2020",
+    "description": [
+      "Preparation and serving of beverages of more than 30 different recipes",
+      "Directing shifts serving in events of few hundred guests",
+      "Maintaining flawless accounting at the end of the day"
     ]
   },
   {
-    "section": "Voluntary work",
-    "details": [
-      {
-        "start_date": "11.2017",
-        "end_date": "06.2020",
-        "activity_title": "Translator",
-        "activity_description": [
-          "Translation for families in Arabic, Kurdish and German"
-        ],
-        "activity_location": "Ludwigsburg",
-        "activity_organisation": "AWO",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "06.2016",
-        "end_date": "07.2016",
-        "activity_title": "Translator",
-        "activity_description": ["Translation in Arabic and English"],
-        "activity_location": "Ellwangen",
-        "activity_organisation": "LEA, Refugee Center",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "06.2012",
-        "end_date": "08.2012",
-        "activity_title": "Translator",
-        "activity_description": ["Translation in Arabic and Turkish"],
-        "activity_location": "Turkey",
-        "activity_organisation": "Turkish Red Crescent",
-        "activity_organisation_url": "",
-        "remarks": ""
-      }
+    "title": "Receptionist",
+    "organisation": "Best House Hotel",
+    "location": "Istanbul, Turkey",
+    "start_date": "2015",
+    "end_date": "2016",
+    "description": [
+      "Welcoming guests and providing them with the most suitable room",
+      "Assessing the credentials of the guests and verifying a legal and smooth check-in",
+      "Informing guests about the hotel's policies and procedures",
+      "Answering phones and managing bookings and reservations",
+      "Working night shifts and on the weekends"
     ]
   },
   {
-    "section": "Education",
-    "details": [
-      {
-        "start_date": "09.2021",
-        "end_date": "02.2022",
-        "activity_title": "Web Development Bootcamp",
-        "activity_description": [],
-        "activity_location": "Berlin",
-        "activity_organisation": "Wild Code School",
-        "activity_organisation_url": "",
-        "remarks": ""
-      },
-      {
-        "start_date": "09.2007",
-        "end_date": "06.2011",
-        "activity_title": "Mathematics",
-        "activity_description": [],
-        "activity_location": "Raqqa, Syria",
-        "activity_organisation": "Al Furat University",
-        "activity_organisation_url": "",
-        "remarks": "Not Graduated"
-      }
+    "title": "Translator",
+    "organisation": "Various Organizations",
+    "location": "Syria, Turkey, Greece and Germany",
+    "start_date": "2012",
+    "end_date": "2020",
+    "description": [
+      "Interpretation to and from Arabic, English, German, Kurdish, and Turkish",
+      "Informing of cultural misunderstandings and suggesting alternative phrases",
+      "Translations and preparation of brochures, booklets and other materials",
+      "Engagement in a variety of fields including: medical, humanitarian, organizational, and logistical"
     ]
   },
   {
-    "section": "Other Skills",
-    "details": [
-      {
-        "activity_title": "Language skills",
-        "activity_description": [
-          { "skill": "English", "level": "fluent" },
-          { "skill": "German", "level": "fluent" },
-          { "skill": "Arabic", "level": "native" },
-          { "skill": "Kurdish", "level": "native" },
-          { "skill": "Turkish", "level": "semi-fluent" }
-        ]
-      }
+    "title": "Liaison Officer",
+    "organisation": "Doctors Without Borders (MSF)",
+    "location": "Syria",
+    "start_date": "2012",
+    "end_date": "2013",
+    "description": [
+      "Regularly visiting hundreds of refugees in dozens of scattered camps and temporary residences",
+      "Assessing and Documenting the living, housing and sanitation situation of the refugees through observation, interviews, and surveys",
+      "Reporting to the medical department and co-organizing mobile clinics that are relevant to the needs of the refugees",
+      "Reporting to the logistic department and co-organizing necessary logistics operations as construction of latrines or distribution of water canisters",
+      "Organization of the transportation process of critical patients to the turkish medical teams on the border"
     ]
   }
 ]
