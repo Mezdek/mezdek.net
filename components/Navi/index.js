@@ -3,9 +3,10 @@ import style from "./style.module.css";
 import { useSelector } from "react-redux";
 
 const handleClick = ({ e, index }) => {
+  const windowHeight = window.innerHeight;
   const children = e.target.parentElement.parentElement.children;
   children[children.length - 1].scrollTo({
-    top: 700 * index,
+    top: windowHeight * index,
     left: 0,
     behavior: "smooth",
   });

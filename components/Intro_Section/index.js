@@ -2,7 +2,6 @@
 import React from "react";
 import style from "./style.module.css";
 import profile from "../../data/profile.json";
-// import { hobbies } from "../../modules";
 
 export default function Intro() {
   return (
@@ -15,9 +14,6 @@ export default function Intro() {
         <i className={style.intro_location}>{profile["current-city"]}</i> based{" "}
         <i className={style.intro_job}>{profile.job}</i>
       </span>
-      {/* <span className={style.intro_hobbies_line}>
-          {hobbies(profile.hobbies)}
-        </span> */}
     </div>
   );
 }
