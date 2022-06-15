@@ -1,5 +1,5 @@
 @value vars: '../../styles/vars.module.css';
-@value canvas_color, primary_color, secondary_color, general-margin, font_color from vars;
+@value canvas_color, font_color_rgb, primary_color, secondary_color, secondary_color_rgb, general-margin, font_color from vars;
 
 .main {
   position: relative;
@@ -14,54 +14,20 @@
 
 .container {
   position: relative;
-  width: calc(100% - (general-margin * 2));
-  line-height: 1.6;
-  margin: 1rem 0;
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 120%;
   text-align: justify;
+  margin: auto 0;
 }
 
-.beforeRev {
-  position: relative;
-  margin: 0.1rem;
-  padding: 0.3rem;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-  text-indent: 2rem;
+.title {
+  margin: 1rem 0;
 }
-.afterRev {
-  position: relative;
-  margin: 0.1rem;
-  padding: 0.3rem;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-}
-.city {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-}
-.basic {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-}
-.boards {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-}
-.langSkill {
+.story {
   position: relative;
   margin: 0.1rem;
   padding: 0.3rem;
@@ -69,14 +35,7 @@
   font-size: inherit;
   font-style: normal;
 }
-.hobbies {
-  position: relative;
-  margin: 0.1rem;
-  padding: 0.3rem;
-  color: inherit;
-  font-size: inherit;
-  font-style: normal;
-}
+
 @media screen and (orientation: portrait) {
   .main {
     height: 90%;

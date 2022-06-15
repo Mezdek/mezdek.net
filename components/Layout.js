@@ -46,7 +46,7 @@ export default function Layout({ children }) {
   return (
     <div className={style.layout}>
       <Navi count={childrenWithID.length} scrollTo={scrollTo} />
-      <ContactCard />
+      {/* <ContactCard /> */}
       <div
         className={style.child}
         ref={sectionsContainer}

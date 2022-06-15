@@ -1,29 +1,23 @@
 @value primary_color, secondary_color, font_color from './vars.module.css';
 .main {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 20%;
-  width: 8%;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 1;
-  padding: 0.4rem;
+  height:100%;
 }
 
 .icon {
   position: relative;
-  height: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: font_color;
   text-transform: capitalize;
-  margin: 8%;
+  margin: 3%;
   font-size: 0.7rem;
   cursor: pointer;
   transition: 350ms;
+  filter: brightness(0.2);
 }
 
 .icon:hover {

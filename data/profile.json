@@ -1,7 +1,15 @@
 {
   "name": "Mezdek",
+  "lastname": "Osman",
   "job": "web developer",
-  "old-city": "",
+  "last-city": "",
   "current-city": "Berlin",
-  "hobbies": ["learning", "languages", "history", "technology"]
+  "story": [
+    "I was born in 1989 in Al-Hasaka, Syria and was a very curious and talkative child. I learned programming for the first time using MSX BASIC when I was 9 years old, and I was also fascinated by electronics and the green circuit boards, so I tried to build a small radio when I was 14. After I grew up, I went to college to study Mathematics but when I changed my mind and wanted to study something less abstract, the Syrian revolution has started.",
+    "In 2011 to avoid joining the military suppression of Assad's regime, I left to Turkey, after which the course of my life became unstable for the next few years, until I arrived to Germany in 2016."
+  ],
+  "passions": [
+    "I love languages, and I am a native speaker of both Kurdish and Arabic, beside fluently speaking English and German and some Turkish.",
+    "I enjoy learning the etymology of a word, and am captivated about ancient history, and beside going for long hikes, I also try to volunteer in places where people could use my help."
+  ]
 }

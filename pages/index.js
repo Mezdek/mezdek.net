@@ -11,15 +11,16 @@ import Intro from "../components/Intro_Section";
 import CodingXP from "../components/CodingXP_Section";
 import Resume from "../components/Resume_Section";
 import Personal from "../components/Personal_Section";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <Provider store={store}>
       <div className={style.canvas}>
         <Head>
-          <title>Main Page</title>
-          <meta name="Mezde.com" content="Personal webpage" />
-          <link rel="icon" href="/favicon.ico" />
+          <title>Mezdek</title>
+          <meta name="Mezdek" content="Personal webpage" />
+          <link rel="icon" href="/micon.ico" />
         </Head>
         <Layout>
           <Section>
@@ -33,6 +34,7 @@ export default function Home() {
           </Section>
           <Section>
             <Personal />
+            <Footer />
           </Section>
         </Layout>
       </div>

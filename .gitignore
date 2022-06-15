@@ -33,8 +33,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# data files
-
-ResumeData_En_copy.json
-ResumeData_DE.json

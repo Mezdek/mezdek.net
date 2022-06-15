@@ -1,15 +1,16 @@
 @value vars: '../../styles/vars.module.css';
-@value canvas_color, primary_color, secondary_color, font_color from vars;
+@value canvas_color, primary_color, font_color_rgb, secondary_color, font_color from vars;
 
 .main {
   position: relative;
-  height: 100%;
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   cursor: default;
+  margin: auto 0;
 }
 
 .resume {
@@ -23,12 +24,15 @@
 .resume::after {
   content: "Hover over a job to see more information about it";
   position: absolute;
+  top: 50vh;
+  right: 0;
+  left: 0;
+  height: 2rem;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 100%;
-  top: 50vh;
+  margin: 0 auto;
   animation: bounce 1s infinite;
   user-select: none;
 }
@@ -48,37 +52,48 @@
   padding: 0;
 }
 
-.ticket {
+.layout {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 19rem;
+  height: 70vh;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: primary_color;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(-50%, 20%) scale(0);
+  transition: 850ms;
+}
+
+.ticket {
+  position: relative;
+  display: flex;
+  max-height: 100%;
+  width: 100%;
   flex-direction: column;
-  justify-content: space-between;
   background-color: secondary_color;
   color: primary_color;
   box-shadow: 0px 0px 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
-  transition: 850ms;
-  padding: 8%;
-  z-index: 1;
-  opacity: 0;
-  transform: translate(-50%, 30%) scale(0);
+  padding: 1rem 1rem 1rem 2rem;
+  overflow-y: auto;
 }
 
 .ticket_header {
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .ticket_description {
   text-align: justify;
 }
 
-.key:hover + .ticket {
+.key:hover + .layout {
   opacity: 1;
-  transform: translate(-50%, 30%) scale(1);
+  transform: translate(-50%, 20%) scale(1);
 }
 
 /********** Responsive **********/
@@ -96,18 +111,6 @@
   .resume::after {
     content: "Click on a job to see more information about it";
   }
-
-  .ticket {
-    height: 60vh;
-    margin-top: 1rem;
-    opacity: 0;
-    transform: translate(-50%, 20%) scale(0);
-    overflow: auto;
-  }
-  .key:hover + .ticket {
-    opacity: 1;
-    transform: translate(-50%, 20%) scale(1);
-  }
 }
 
 /** Tablets **/
@@ -119,16 +122,6 @@
 
   .resume::after {
     content: "Click on a job to see more information about it";
-  }
-
-  .ticket {
-    height: 60vh;
-    overflow: auto;
-  }
-
-  .key:hover + .ticket {
-    opacity: 1;
-    transform: translate(-50%, 20%) scale(1);
   }
 }
 

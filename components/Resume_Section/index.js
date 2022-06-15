@@ -15,9 +15,6 @@ export default function Resume() {
         <Ticket data={ResumeData[3]} /> with Doctors without Borders in Syria
         during the war.
       </div>
-      {/* <p className={style.hint}>
-        Hover over a job to see more information about it
-      </p> */}
     </div>
   );
 }
