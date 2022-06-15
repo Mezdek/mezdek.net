@@ -56,7 +56,6 @@
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  padding-top: 10%;
 }
 
 /*************** Footer ***************/
@@ -87,8 +86,17 @@
 }
 
 /********** Responsive **********/
-@media only screen and (max-height: 540px) and (orientation: landscape) {
-  .child {
-    scroll-snap-type: unset;
+
+/***** Mobile Phones *****/
+
+@media only screen and (orientation: portrait) {
+  .section_in {
+    padding-top: 10%;
   }
+}
+
+@media only screen and (max-height: 540px) and (orientation: landscape) {
+  /* .child {
+    scroll-snap-type: unset;
+  } */
 }
