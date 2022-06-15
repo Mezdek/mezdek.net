@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Provider } from "react-redux";
 import { store } from "../state/store";
 
@@ -14,18 +14,7 @@ import Resume from "../components/Resume_Section";
 import Personal from "../components/Personal_Section";
 import Footer from "../components/Footer";
 
-const getRealDimensions = () => {
-  let vh = window.innerHeight * 0.01;
-  let vw = window.innerWidth * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-  document.documentElement.style.setProperty("--vw", `${vw}px`);
-};
-
 export default function Home() {
-  useEffect(() => {
-    getRealDimensions();
-    window.addEventListener("resize", getRealDimensions);
-  }, []);
   return (
     <Provider store={store}>
       <div className={style.canvas}>
