@@ -6,7 +6,6 @@ import { actionCreators } from "../state";
 import { useDispatch } from "react-redux";
 
 import Navi from "./Navi";
-import ContactCard from "./ContactCard";
 
 //This method is to check if an element is inside the viewport
 const isInViewport = (element) => {
@@ -46,7 +45,6 @@ export default function Layout({ children }) {
   return (
     <div className={style.layout}>
       <Navi count={childrenWithID.length} scrollTo={scrollTo} />
-      {/* <ContactCard /> */}
       <div
         className={style.child}
         ref={sectionsContainer}
