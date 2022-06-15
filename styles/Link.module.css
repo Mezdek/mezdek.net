@@ -1,8 +1,9 @@
 @value primary_color, secondary_color, font_color from './vars.module.css';
 .main {
   position: relative;
+  height: max(20%, 3rem);
   display: flex;
-  height:100%;
+  align-items: center;
 }
 
 .icon {
@@ -17,11 +18,10 @@
   font-size: 0.7rem;
   cursor: pointer;
   transition: 350ms;
-  filter: brightness(0.2);
 }
 
 .icon:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   color: secondary_color;
 }
 
