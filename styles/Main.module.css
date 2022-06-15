@@ -97,10 +97,6 @@
 
 @media only screen and (max-height: 540px) and (orientation: landscape) {
   .child {
-    /* scroll-snap-type: unset; */
+    scroll-snap-type: unset;
   }
-  /* .section {
-    justify-content: center;
-    margin-top: 1%;
-  } */
 }
