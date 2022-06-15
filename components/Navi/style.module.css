@@ -30,15 +30,15 @@
 }
 
 .navi_selected {
-  background-color: secondary_color;
-  border: solid font_color 1px;
+  background-color: primary_color;
+  border: solid 0.09rem secondary_color;
   width: 1rem;
   height: 1rem;
   cursor: default;
 }
 
-@media screen and (orientation: portrait) {
+/* @media screen and (orientation: portrait) {
   .navi {
     display: none;
   }
-}
+} */
