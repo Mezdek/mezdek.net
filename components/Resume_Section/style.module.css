@@ -3,7 +3,7 @@
 
 .main {
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -102,7 +102,6 @@
 
 @media only screen and (orientation: portrait) {
   .main {
-    height: 90%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -116,8 +115,14 @@
 /** Tablets **/
 
 @media only screen and (max-height: 540px) and (orientation: landscape) {
-  .main {
-    height: 90%;
+  .key:hover + .layout {
+    opacity: 1;
+    transform: translate(-50%, 10%) scale(1);
+  }
+
+  .layout:hover {
+    opacity: 1;
+    transform: translate(-50%, 10%) scale(1);
   }
 
   .resume::after {

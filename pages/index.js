@@ -24,7 +24,7 @@ const getRealDimensions = () => {
 export default function Home() {
   useEffect(() => {
     getRealDimensions();
-    // window.addEventListener("resize", getRealDimensions);
+    window.addEventListener("resize", getRealDimensions);
   }, []);
   return (
     <Provider store={store}>
