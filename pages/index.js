@@ -22,9 +22,9 @@ const getRealDimensions = () => {
 };
 
 export default function Home() {
-  // useEffect(() => {
-  //   window.addEventListener("resize", getRealDimensions);
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("resize", getRealDimensions);
+  }, []);
   return (
     <Provider store={store}>
       <div className={style.canvas}>
