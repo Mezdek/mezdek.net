@@ -34,7 +34,7 @@
       "This very website you're browsing right now.",
       "I used the amazing Next.js framework together with a bit of Redux for the state and CSS Modules for the styling."
     ],
-    "link": "https://github.com/Mezdek/personal-website"
+    "link": "https://github.com/Mezdek/mezdek.net"
   },
   {
     "name": "Audiophile",
@@ -44,6 +44,6 @@
       "It is expectd to be a small e-commerce website for selling musical products.",
       "Check the repo's readme file on my github for more detail"
     ],
-    "link": "https://github.com/Mezdek/portfolio-01"
+    "link": "https://github.com/Mezdek/fm-audiophile"
   }
 ]
