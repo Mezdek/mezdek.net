@@ -72,8 +72,7 @@
   cursor: default;
   background-color: rgba(font_color_rgb, 1);
   color: black;
-  padding: 1%;
-  padding-left: 10%;
+  padding: 1% 10%;
 }
 .footer_content {
   position: relative;

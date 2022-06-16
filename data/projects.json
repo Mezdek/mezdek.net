@@ -1,7 +1,7 @@
 [
   {
     "name": "Music Jam",
-    "image": "https://i.ibb.co/4Nv1dqj/musicjam.gif",
+    "image": "https://i.ibb.co/BsDZ8vD/music-jam.webp",
     "description": [
       "A React.js project for musicians to meet and jam together.",
       "It was built with a team of 8 people while taking part in a hackathon.",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Planet Music",
-    "image": "https://i.ibb.co/pWXKcK2/planetmusic.gif",
+    "image": "https://i.ibb.co/9rnR922/planet-music.webp",
     "description": [
       "A React.js project, which consumes 4 Web-APIs, that is all about music, including streaming, events, news and quizzes.",
       "It was my first experience with React.js and APIs in a group and I learned a lot about it."
@@ -20,7 +20,7 @@
   },
   {
     "name": "Paradox",
-    "image": "https://i.ibb.co/RhQ4hCm/paradox.gif",
+    "image": "https://i.ibb.co/k3hfX5X/paradox.webp",
     "description": [
       "A full stack web app developed using Next.js, CSS Modules and MySQL.",
       "It is a platform for users to freely post and share their thoughts and experiences."
@@ -29,7 +29,7 @@
   },
   {
     "name": "My Portfolio",
-    "image": "https://i.ibb.co/hVFFBZV/mezdek.webp",
+    "image": "https://i.ibb.co/pPXhPTv/portfolio.webp",
     "description": [
       "This very website you're browsing right now.",
       "I used the amazing Next.js framework together with a bit of Redux for the state and CSS Modules for the styling."
@@ -38,7 +38,7 @@
   },
   {
     "name": "Audiophile",
-    "image": "https://i.ibb.co/Gt5hmnB/ezgif-com-gif-maker-1.gif",
+    "image": "https://i.ibb.co/h1rBS33/audiophile.webp",
     "description": [
       "A project from Frontend Mentor that I haven't finished yet.",
       "It is expectd to be a small e-commerce website for selling musical products.",
@@ -47,3 +47,5 @@
     "link": "https://github.com/Mezdek/fm-audiophile"
   }
 ]
+
+

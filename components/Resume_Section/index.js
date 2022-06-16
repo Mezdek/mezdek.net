@@ -13,7 +13,8 @@ export default function Resume() {
         the pandemic was <Ticket data={ResumeData[0]} /> and I also worked once
         as a <Ticket data={ResumeData[1]} /> in Istanbul and as a{" "}
         <Ticket data={ResumeData[3]} /> with Doctors without Borders in Syria
-        during the war.
+        during the war. But now I want to start a career as developer for web
+        applications.
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { actionCreators } from "../state";
 import { useDispatch } from "react-redux";
 
 import Navi from "./Navi";
+import Section from "./Section";
 
 //This method is to check if an element is inside the viewport
 const isInViewport = (element) => {
@@ -33,10 +34,10 @@ export default function Layout({ children }) {
       behavior: "smooth",
     });
   };
-  //This method dynamically gives an id to all the sections inside the container
-  const childrenWithID = Children.map(children, (child, index) => {
+  //This method dynamically encircles each children in a Section component
+  const sectionedChildren = Children.map(children, (child, index) => {
     if (isValidElement(child)) {
-      return cloneElement(child, { id: ++index });
+      return <Section id={++index}>{child}</Section>;
     } else {
       return child;
     }
@@ -44,13 +45,13 @@ export default function Layout({ children }) {
   //Eventualy the layout has the navigator and the contatCard components beside a container with all the other sections in it after dynamically assigning an id to each of them
   return (
     <div className={style.layout}>
-      <Navi count={childrenWithID.length} scrollTo={scrollTo} />
+      <Navi count={sectionedChildren.length} scrollTo={scrollTo} />
       <div
         className={style.child}
         ref={sectionsContainer}
         onScroll={(e) => handleScroll(e)}
       >
-        {childrenWithID}
+        {sectionedChildren}
       </div>
     </div>
   );
