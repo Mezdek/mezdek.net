@@ -1,5 +1,5 @@
 @value vars: '../../styles/vars.module.css';
-@value canvas_color, primary_color, font_color_rgb, secondary_color, font_color from vars;
+@value section_background, resumeTicket_background, resumeTicket_fontColor from vars;
 
 .main {
   position: relative;
@@ -46,7 +46,7 @@
 .key {
   font-style: normal;
   text-decoration: underline dotted rgb(100, 100, 100) 10%;
-  color: secondary_color;
+  color: resumeTicket_background;
   cursor: help;
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: primary_color;
+  background-color: section_background;
   z-index: 1;
   opacity: 0;
   transform: translate(-50%, 20%) scale(0);
@@ -74,8 +74,8 @@
   max-height: 100%;
   width: 100%;
   flex-direction: column;
-  background-color: secondary_color;
-  color: primary_color;
+  background-color: resumeTicket_background;
+  color: resumeTicket_fontColor;
   box-shadow: 0px 0px 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
   padding: 1rem 1rem 1rem 2rem;
@@ -131,15 +131,6 @@
 }
 
 /********** Animations **********/
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes bounce {
   0% {

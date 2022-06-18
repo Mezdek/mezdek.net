@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import style from "../styles/Link.module.css";
+import style from "./style.module.css";
 
 export default function Link({
   title,

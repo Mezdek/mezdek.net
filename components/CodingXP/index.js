@@ -23,7 +23,7 @@ export default function CodingXP() {
           target="_blank"
           rel="noopener noreferrer"
         />
-        . I learned together with my classmates how to build complete web
+        . Together with my classmates, I learned how to build complete web
         applications using React, Node, Express, and MySQL with the help of many
         dojos and workshops.
       </div>

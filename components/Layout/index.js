@@ -1,12 +1,12 @@
 import React, { Children, cloneElement, isValidElement, useRef } from "react";
-import style from "../styles/Main.module.css";
+import style from "./style.module.css";
 
 import { bindActionCreators } from "redux";
-import { actionCreators } from "../state";
+import { actionCreators } from "../../state";
 import { useDispatch } from "react-redux";
 
-import Navi from "./Navi";
-import Section from "./Section";
+import Navi from "../Navi";
+import Section from "../Section";
 
 //This method is to check if an element is inside the viewport
 const isInViewport = (element) => {

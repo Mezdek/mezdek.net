@@ -7,13 +7,12 @@ import style from "../styles/Main.module.css";
 import Head from "next/head";
 
 import Layout from "../components/Layout";
-import Section from "../components/Section";
-import Intro from "../components/Intro_Section";
-import CodingXP from "../components/CodingXP_Section";
-import Resume from "../components/Resume_Section";
-import End from "../components/End";
+import Intro from "../components/Intro";
+import CodingXP from "../components/CodingXP";
+import Resume from "../components/Resume";
+import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Main() {
   return (
     <Provider store={store}>
       <div className={style.canvas}>
@@ -36,7 +35,7 @@ export default function Home() {
           <Intro />
           <CodingXP />
           <Resume />
-          <End />
+          <Footer />
         </Layout>
       </div>
     </Provider>

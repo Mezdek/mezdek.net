@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/Main.module.css";
+import style from "./style.module.css";
 import { useSelector } from "react-redux";
 
 export default function Section({ id, animation, children }) {

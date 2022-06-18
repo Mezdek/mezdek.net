@@ -1,5 +1,4 @@
-@value vars: '../../styles/vars.module.css';
-@value canvas_color, font_color_rgb, primary_color, secondary_color, secondary_color_rgb, general-margin, font_color from vars;
+/* @value vars: '../../styles/vars.module.css'; */
 
 .main {
   position: relative;
@@ -22,6 +21,7 @@
   line-height: 120%;
   text-align: justify;
   margin: auto 0;
+  padding-bottom: 2%;
 }
 
 .title {

@@ -1,7 +1,5 @@
 @value vars: './vars.module.css';
-@value canvas_color, primary_color, secondary_color, secondary_color_rgb, font_color, font_color_rgb, general-font-family from vars;
-
-/*************** Layout ***************/
+@value canvas_color, font_color, general_font_family from vars;
 
 .canvas {
   position: relative;
@@ -9,93 +7,11 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: primary_color;
+  background-color: canvas_color;
   color: font_color;
-  font-family: general-font-family;
-}
-
-.layout {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.child {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-}
-
-/*************** Section ***************/
-
-.section {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  margin-top: 2rem;
-  scroll-snap-stop: always;
-  scroll-snap-align: center;
-  overflow: hidden;
-}
-
-.section_in {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-/*************** Footer ***************/
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 30vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  cursor: default;
-  background-color: rgba(font_color_rgb, 1);
-  color: black;
-  padding: 1% 10%;
-}
-.footer_content {
-  position: relative;
-  height: max(20%, 3rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1%;
-  text-align: center;
+  font-family: general_font_family;
 }
 
 /********** Responsive **********/
 
 /***** Mobile Phones *****/
-
-@media only screen and (orientation: portrait) {
-  .section_in {
-    padding-top: 10%;
-  }
-}
-
-@media only screen and (max-height: 540px) and (orientation: landscape) {
-  .child {
-    scroll-snap-type: unset;
-  }
-}

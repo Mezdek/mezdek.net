@@ -1,14 +1,12 @@
 import React from "react";
-import style from "../styles/Main.module.css";
-import ContactCard from "./ContactCard";
+import Biography from "./Biography";
+import Appendix from "./Appendix";
 
-export default function Footer() {
+export default function End() {
   return (
-    <div className={style.footer}>
-      <div className={style.footer_content}>
-        Find me on LinkedIn and GitHub or simply email me
-      </div>
-      <ContactCard />
-    </div>
+    <>
+      <Biography />
+      <Appendix />
+    </>
   );
 }

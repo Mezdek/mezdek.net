@@ -1,10 +1,4 @@
-@value primary_color, secondary_color, font_color from './vars.module.css';
-.main {
-  position: relative;
-  height: max(20%, 3rem);
-  display: flex;
-  align-items: center;
-}
+/* @value vars: '../../styles/vars.module.css'; */
 
 .icon {
   position: relative;
@@ -12,7 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: font_color;
   text-transform: capitalize;
   margin: 3%;
   font-size: 0.7rem;
@@ -22,7 +15,6 @@
 
 .icon:hover {
   transform: scale(1.1);
-  color: secondary_color;
 }
 
 .image {
@@ -38,5 +30,5 @@
 }
 
 .text:hover {
-  color: secondary_color;
+  filter: brightness(1.5);
 }

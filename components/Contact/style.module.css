@@ -1,0 +1,6 @@
+.main {
+    position: relative;
+    height: max(20%, 3rem);
+    display: flex;
+    align-items: center;
+  }

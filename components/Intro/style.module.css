@@ -1,5 +1,5 @@
 @value vars: '../../styles/vars.module.css';
-@value canvas_color, primary_color, secondary_color, font_color, general-font-family from vars;
+@value color_secondary_rgb, font_color, intro_font_family from vars;
 
 .intro_main {
   position: relative;
@@ -11,13 +11,13 @@
   justify-content: center;
   font-size: 1.5rem;
   line-height: 1.5;
-  font-family: Lalezar;
+  font-family: intro_font_family;
   color: font_color;
 }
 
 .intro_name {
   font-style: normal;
-  color: secondary_color;
+  color: rgb(color_secondary_rgb);
 }
 .intro_job {
   font-style: normal;

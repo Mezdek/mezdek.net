@@ -1,5 +1,5 @@
 @value vars: '../../styles/vars.module.css';
-@value canvas_color, primary_color_hex, secondary_color_hex, canvas_color_hex, primary_color, secondary_color, font_color from vars;
+@value navi_color_main, navi_color_sub from vars;
 
 .navi {
   position: absolute;
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: secondary_color;
+  background-color: navi_color_main;
   border-radius: 1rem;
   z-index: 1;
 }
@@ -21,7 +21,7 @@
   position: relative;
   display: block;
   cursor: pointer;
-  background-color: secondary_color;
+  background-color: navi_color_main;
   width: 0.5rem;
   height: 0.5rem;
   margin: 1.5rem;
@@ -30,8 +30,8 @@
 }
 
 .navi_selected {
-  background-color: primary_color;
-  border: solid 0.09rem secondary_color;
+  background-color: navi_color_sub;
+  border: solid 0.09rem navi_color_main;
   width: 1rem;
   height: 1rem;
   cursor: default;

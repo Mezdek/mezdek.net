@@ -1,0 +1,26 @@
+/* @value vars: '../../styles/vars.module.css'; */
+
+.layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.child {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+@media only screen and (max-height: 540px) and (orientation: landscape) {
+  .child {
+    scroll-snap-type: y proximity;
+  }
+}

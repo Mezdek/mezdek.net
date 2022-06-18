@@ -1,0 +1,32 @@
+@value vars: '../../styles/vars.module.css';
+@value section_background from vars;
+
+.section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 2rem;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+  overflow: hidden;
+  background-color: section_background;
+}
+
+.section_in {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media only screen and (orientation: portrait) {
+  .section_in {
+    padding-top: 10%;
+  }
+}
