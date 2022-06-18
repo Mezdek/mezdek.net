@@ -15,11 +15,13 @@
 /*** Navi ***/
 @value navi_color_main: rgb(color_secondary_rgb);
 @value navi_color_sub: rgb(color_primary_rgb);
+/*** Links ***/
+@value linkText_hoverColor: rgb(color_secondary_rgb);
 /*** CodingXP ***/
-@value projectcard_background: rgba(color_tertiary_rgb, 0.9);
-@value projectcard_title: rgb(color_secondary_rgb);
-@value projectcard_title_icon: url("../public/logos/github03.png");
-@value projectcard_font: rgb(color_primary_rgb);
+@value projectCard_background: rgba(color_tertiary_rgb, 0.9);
+@value projectCard_title: rgb(color_secondary_rgb);
+@value projectCard_title_icon: url("../public/logos/github03.png");
+@value projectCard_font: rgb(color_primary_rgb);
 /*** Resume ***/
 @value resumeTicket_background: rgb(color_secondary_rgb);
 @value resumeTicket_fontColor: rgb(color_primary_rgb);

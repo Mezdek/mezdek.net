@@ -1,5 +1,5 @@
 @value vars: '../../styles/vars.module.css';
-@value projectcard_background, projectcard_font, projectcard_title, projectcard_title_icon from vars;
+@value projectCard_background, projectCard_font, projectCard_title, projectCard_title_icon from vars;
 
 .main {
   position: relative;
@@ -79,9 +79,9 @@
   flex-shrink: 0;
   flex-direction: column;
   margin: 0.5rem;
-  background-color: projectcard_background;
+  background-color: projectCard_background;
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
-  color: projectcard_font;
+  color: projectCard_font;
   border-radius: 0.5rem;
   transition: 350ms;
 }
@@ -100,7 +100,7 @@
   justify-content: center;
   padding: 1rem;
   margin: auto 0;
-  color: projectcard_title;
+  color: projectCard_title;
   font-size: 1.1rem;
   cursor: alias;
 }
@@ -113,7 +113,7 @@
   width: 1rem;
   height: 1rem;
   display: block;
-  background-image: projectcard_title_icon;
+  background-image: projectCard_title_icon;
   background-size: cover;
   margin-right: 0.5rem;
 }

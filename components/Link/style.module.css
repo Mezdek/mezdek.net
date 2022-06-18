@@ -1,4 +1,5 @@
-/* @value vars: '../../styles/vars.module.css'; */
+@value vars: '../../styles/vars.module.css';
+@value linkText_hoverColor from vars;
 
 .icon {
   position: relative;
@@ -30,5 +31,5 @@
 }
 
 .text:hover {
-  filter: brightness(1.5);
+  color: linkText_hoverColor;
 }
