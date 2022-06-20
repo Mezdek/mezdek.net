@@ -18,7 +18,7 @@
 /*** Links ***/
 @value linkText_hoverColor: rgb(color_secondary_rgb);
 /*** CodingXP ***/
-@value projectCard_background: rgba(color_tertiary_rgb, 0.9);
+@value projectCard_background: rgb(color_tertiary_rgb);
 @value projectCard_title: rgb(color_secondary_rgb);
 @value projectCard_title_icon: url("../public/logos/github03.png");
 @value projectCard_font: rgb(color_primary_rgb);
